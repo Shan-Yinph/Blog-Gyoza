@@ -1,6 +1,6 @@
 {
   "site": {
-    "url": "https://gyoza.lxchapu.com",
+    "url": "https://yinph.netlify.app/",
     "title": "Yinphの小站",
     "description": "欢迎来到我的小站ヾ(≧▽≦*)o",
     "keywords": "Yinph,blog,Astro,theme,博客,个人博客,个人网站",
@@ -104,7 +104,7 @@
     "serverURL": ""
   },
   "sponsor": {
-    "wechat": "https://object.lxchapu.com/bed%2F2024%2F0507_6e3e8f73df2d4e6d.webp"
+    "wechat": ""
   },
   "analytics": {
     "enable": false,
