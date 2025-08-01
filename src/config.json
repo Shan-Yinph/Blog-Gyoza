@@ -1,0 +1,122 @@
+{
+  "site": {
+    "url": "https://gyoza.lxchapu.com",
+    "title": "Yinphの小站",
+    "description": "欢迎来到我的小站ヾ(≧▽≦*)o",
+    "keywords": "Yinph,blog,Astro,theme,博客,个人博客,个人网站",
+    "lang": "zh-CN",
+    "favicon": "/favicon.svg",
+    "appleTouchIcon": "/apple-touch-icon.png"
+  },
+  "author": {
+    "name": "Yinph",
+    "avatar": "/author.png"
+  },
+  "hero": {
+    "name": "Yinph",
+    "bio": "一个记录日常和奇怪灵感的普通高中生✨",
+    "description": "博客，是我与世界对话的窗口，也是我心灵成长的见证。",
+    "socials": [
+      {
+        "name": "Github",
+        "icon": "icon-github",
+        "url": "https://github.com/Shan-Yinph",
+        "color": "rgb(24, 23, 23)"
+      },
+      {
+        "name": "知乎",
+        "icon": "icon-zhihu",
+        "url": "https://www.zhihu.com/people/-yinph",
+        "color": "rgb(0, 102, 255)"
+      },
+      {
+        "name": "B站",
+        "icon": "icon-bilibili",
+        "url": "https://space.bilibili.com/1670180008",
+        "color": "rgb(251, 114, 153)"
+      },
+      {
+        "name": "Email",
+        "icon": "icon-mail",
+        "url": "mailto:1171619501@qq.com",
+        "color": "rgb(212, 70, 56)"
+      }
+    ],
+    "yiyan": "生命充满劳碌，但依然要诗意地栖居，因为生活远比诗歌精彩。"
+  },
+  "color": {
+    "accent": [
+      { "light": "#0396FF", "dark": "#ABDCFF" },
+      { "light": "#F55555", "dark": "#FCCF31" },
+      { "light": "#fb7287", "dark": "#99D8CF" },
+      { "light": "#9F44D3", "dark": "#E2B0FF" },
+      { "light": "#FF6666", "dark": "#A1CCD1" },
+      { "light": "#F6416C", "dark": "#838BC6" },
+      { "light": "#32CCBC", "dark": "#90F7EC" },
+      { "light": "#33A6B8", "dark": "#79F1A4" }
+    ],
+    "bg": {
+      "primary": { "light": "#ffffff", "dark": "#1c1c1e" },
+      "secondary": { "light": "#f4f4f5", "dark": "#27272a" }
+    },
+    "text": {
+      "primary": { "light": "#373a3c", "dark": "#ffffff" },
+      "secondary": { "light": "#71717a", "dark": "#d1d5db" }
+    },
+    "border": {
+      "primary": { "light": "#e4e4e7", "dark": "#3f3f46" }
+    }
+  },
+  "menus": [
+    {
+      "name": "首页",
+      "link": "/",
+      "icon": "icon-pantone"
+    },
+    {
+      "name": "归档",
+      "link": "/archives",
+      "icon": "icon-archive"
+    },
+    {
+      "name": "项目",
+      "link": "/projects",
+      "icon": "icon-flask"
+    },
+    {
+      "name": "关于",
+      "link": "/about",
+      "icon": "icon-ghost"
+    },
+    {
+      "name": "友链",
+      "link": "/friends",
+      "icon": "icon-hearts"
+    }
+  ],
+  "posts": {
+    "perPage": 10
+  },
+  "footer": {
+    "startTime": "2025-07-27T00:00:00Z"
+  },
+  "waline": {
+    "serverURL": ""
+  },
+  "sponsor": {
+    "wechat": "https://object.lxchapu.com/bed%2F2024%2F0507_6e3e8f73df2d4e6d.webp"
+  },
+  "analytics": {
+    "enable": false,
+    "google": {
+      "measurementId": ""
+    },
+    "umami": {
+      "serverUrl": "",
+      "websiteId": ""
+    },
+    "microsoftClarity": {
+      "projectId": ""
+    }
+  }
+}
