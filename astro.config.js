@@ -65,7 +65,8 @@ export default defineConfig({
   vite: {
     build: {
       rollupOptions: {
-        external: ['/pagefind/pagefind.js'],
+        // 不将 Pagefind 打包到输出中
+        // external: ['/pagefind/pagefind.js'],
       },
     },
   },

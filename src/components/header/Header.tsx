@@ -5,7 +5,14 @@ import { AnimatedLogo } from './AnimatedLogo'
 import { HeaderMeta } from './HeaderMeta'
 import { HeaderDrawer } from './HeaderDrawer'
 import { useIsMobile } from './hooks'
-import { ThemeSwitch } from '@/components/footer/ThemeSwitch'
+import { ThemeSwitch } from '@/components/footer/ThemeSwitch';
+
+// 扩展ThemeSwitch组件的props类型
+declare module '@/components/footer/ThemeSwitch' {
+  interface ThemeSwitchProps {
+    'client:only'?: string;
+  }
+}
 
 export function Header() {
   const isMobile = useIsMobile()
@@ -22,6 +29,7 @@ export function Header() {
           <HeaderMeta className="absolute right-0" />
         </div>
         <div className="flex items-center justify-center space-x-2 ml-auto">
+          {/* @ts-ignore: client:only is a valid Astro attribute */}
           <ThemeSwitch client:only="react" />
           <SearchButton />
         </div>

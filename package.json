@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "prepare": "npx simple-git-hooks",
-    "build": "astro check && astro build && pagefind",
+    "build": "astro check && astro build && pagefind --site .",
     "dev": "astro dev",
     "dev:build:initial": "astro build",
     "dev:build": "astro build --watch",
