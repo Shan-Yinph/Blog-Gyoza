@@ -1,5 +1,5 @@
 import { useAtomValue } from 'jotai'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { getSystemTheme, changePageTheme, setLocalTheme } from '@/utils/theme'
 import { themeAtom } from '@/store/theme'
 import { throttle } from 'lodash-es'
@@ -7,18 +7,15 @@ import { throttle } from 'lodash-es'
 export function ThemeProvider() {
   const theme = useAtomValue(themeAtom)
   const themeRef = useRef(theme)
+  const [isInitialized, setIsInitialized] = useState(false)
 
   // 添加节流处理，限制主题变化频率为200ms
   const throttledSetTheme = useRef(
     throttle((newTheme: string) => {
       setLocalTheme(newTheme)
 
-      if (newTheme === 'system') {
-        const systemTheme = getSystemTheme()
-        changePageTheme(systemTheme)
-      } else {
-        changePageTheme(newTheme)
-      }
+      const appliedTheme = newTheme === 'system' ? getSystemTheme() : newTheme
+      changePageTheme(appliedTheme)
     }, 200)
   ).current
 
@@ -31,12 +28,9 @@ export function ThemeProvider() {
 
   useEffect(() => {
     // 初始应用主题
-    if (theme === 'system') {
-      const systemTheme = getSystemTheme()
-      changePageTheme(systemTheme)
-    } else {
-      changePageTheme(theme)
-    }
+    const appliedTheme = theme === 'system' ? getSystemTheme() : theme
+    changePageTheme(appliedTheme)
+    setIsInitialized(true)
 
     themeRef.current = theme
 
@@ -51,10 +45,12 @@ export function ThemeProvider() {
 
   // 使用单独的effect处理主题节流
   useEffect(() => {
-    if (themeRef.current !== theme) {
+    // 初始化阶段不触发节流处理
+    if (isInitialized && themeRef.current !== theme) {
       throttledSetTheme(theme)
     }
-  }, [theme, throttledSetTheme])
+    themeRef.current = theme
+  }, [theme, throttledSetTheme, isInitialized])
 
   return null
 }
