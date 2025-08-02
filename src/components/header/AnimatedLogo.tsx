@@ -23,11 +23,11 @@ export function AnimatedLogo() {
 
 function Logo() {
   return (
-    <a className="block" href="/" title="Nav to home">
+    <a className="block" href="/" title="回到首页">
       <img
-        className="size-[40px] select-none object-cover rounded-2xl"
+        className="size-[40px] select-none object-cover rounded-3xl"
         src={author.avatar}
-        alt="Site owner avatar"
+        alt="站长"
       />
     </a>
   )

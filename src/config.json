@@ -15,7 +15,7 @@
   "hero": {
     "name": "Yinph",
     "bio": "一个记录日常和奇怪灵感的普通高中生✨",
-    "description": "博客，是我与世界对话的窗口，也是我心灵成长的见证。",
+    "description": "博客，是我与世界对话的窗口，也是我成长的见证。",
     "socials": [
       {
         "name": "Github",
@@ -36,7 +36,7 @@
         "color": "rgb(251, 114, 153)"
       },
       {
-        "name": "Email",
+        "name": "E-mail",
         "icon": "icon-mail",
         "url": "mailto:1171619501@qq.com",
         "color": "rgb(212, 70, 56)"
