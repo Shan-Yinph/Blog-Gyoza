@@ -39,6 +39,11 @@ html.gray {
   filter: grayscale(1);
 }
 
+/* 主题切换过渡效果 */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
 * {
   scrollbar-width: thin;
 }
